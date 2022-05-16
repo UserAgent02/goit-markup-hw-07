@@ -255,10 +255,6 @@ ul, ol {
   display: flex;
 }
 
-.properties-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .properties-item .properties-icon {
   content: '';
   display: flex;
@@ -269,6 +265,10 @@ ul, ol {
   border-radius: 4px;
   margin-bottom: 30px;
   padding: 25px 0;
+}
+
+.properties-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .properties-title {
@@ -371,15 +371,15 @@ ul, ol {
   display: flex;
 }
 
-.team-items:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-items {
   width: 270px;
   background: var(--background-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-items:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-cards-text {
@@ -420,6 +420,11 @@ ul, ol {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.team-soc-link:hover .team-soc-link:focus {
+  background-color: var(--main-color);
+  color: var(--background-color-white);
+}
+
 .team-soc-list {
   display: flex;
   justify-content: center;
@@ -431,16 +436,6 @@ ul, ol {
 
 .team-soc-icon {
   fill: currentColor;
-}
-
-.team-soc-link:hover {
-  background-color: var(--main-color);
-  color: var(--background-color-white);
-}
-
-.team-soc-link:focus {
-  background-color: var(--main-color);
-  color: var(--background-color-white);
 }
 
 .clients {
@@ -534,7 +529,7 @@ ul, ol {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn-icon.modal-close-btn:hover .modal-close-btn-icon {
+.modal-close-btn-icon:hover .modal-close-btn-icon {
   fill: var(--main-color);
 }
 

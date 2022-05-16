@@ -7,9 +7,6 @@
     list-style: none;
     display: flex;
 }
-.properties-item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .properties-item .properties-icon{
     content: '';
@@ -23,7 +20,9 @@
     margin-bottom: 30px;
     padding: 25px 0;
 }
-
+.properties-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .properties-title {
     width: 270px;
