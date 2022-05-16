@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --main-color: #4bf321;
+  --main-color: #2196F3;
   --secondary-link-color: #757575;
   --main-text-color: #212121;
   --background-color-white: #ffffff;
@@ -47,15 +47,20 @@ button {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
 /*header*/
 .header {
   padding-top: 0;
-  border-bottom: 1px solid #ff0000;
+  border-bottom: 1px solid #ECECEC;
 }
 
-/* .border {
-    border-bottom: 1px solid #ECECEC;
-} */
 .header .container {
   display: flex;
   align-items: center;
@@ -80,14 +85,6 @@ button {
 }
 
 /*contact link*/
-a {
-  text-decoration: none;
-}
-
-ul, ol {
-  list-style: none;
-}
-
 .header-nav__list {
   display: flex;
 }
@@ -463,10 +460,6 @@ ul, ol {
   color: var(--main-text-color);
 }
 
-.client-block {
-  display: flex;
-}
-
 .clients-logo-icon:not(:last-child) {
   margin-right: 30px;
 }
@@ -484,22 +477,16 @@ ul, ol {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients-logo-link:hover, .clients-logo-link:focus {
+  background-color: var(--background-color-white);
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
 .clients-icon {
   width: 170px;
   height: 92px;
   fill: currentColor;
-}
-
-.clients-logo-link:hover {
-  background-color: var(--background-color-white);
-  color: var(--main-color);
-  border-color: var(--main-color);
-}
-
-.clients-logo-link:focus {
-  background-color: var(--background-color-white);
-  color: var(--main-color);
-  border-color: var(--main-color);
 }
 
 /*backdrop*/
@@ -547,7 +534,7 @@ ul, ol {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover .modal-close-btn-icon {
+.modal-close-btn-icon.modal-close-btn:hover .modal-close-btn-icon {
   fill: var(--main-color);
 }
 
@@ -619,11 +606,6 @@ ul, ol {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-comment:hover, .modal-comment:focus {
-  border-color: var(--main-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-comment {
   resize: none;
   display: block;
@@ -643,6 +625,11 @@ ul, ol {
   line-height: 1.16px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-comment:hover, .modal-comment:focus {
+  border-color: var(--main-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field-checkbox {
@@ -731,7 +718,7 @@ ul, ol {
   cursor: pointer;
 }
 
-.modal-button:hover {
+.modal-button :hover {
   border: 0px solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
   outline-color: rgba(255, 255, 255, 0);
@@ -917,7 +904,7 @@ ul, ol {
   color: #FFFFFF;
 }
 
-.footer-mail, .footer-tel {
+.footer-mail {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -929,6 +916,15 @@ ul, ol {
 .footer-mail:hover, .footer-mail:focus {
   color: var(--main-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-tel:hover, .footer-tel:focus {
@@ -954,7 +950,7 @@ ul, ol {
   margin-left: 70px;
 }
 
-.social-footer-text {
+.social-footer.social-footer-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -975,6 +971,12 @@ ul, ol {
   align-items: center;
 }
 
+.soc-footer-link:hover, .soc-footer-link:focus {
+  background-color: var(--main-color);
+  color: var(--background-color-white);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .soc-footer-list {
   display: flex;
   justify-content: center;
@@ -988,24 +990,13 @@ ul, ol {
   fill: ffffff;
 }
 
-.soc-footer-link:hover {
-  background-color: var(--main-color);
-  color: var(--background-color-white);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.soc-footer-link:focus {
-  background-color: var(--main-color);
-  color: var(--background-color-white);
-}
-
 /*form footer*/
 .form-footer {
   margin-left: auto;
   position: relative;
 }
 
-.form-footer-text {
+.form-footer.form-footer-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
